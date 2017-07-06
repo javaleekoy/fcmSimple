@@ -40,7 +40,7 @@ public class Notification {
         if (!multicast.isEmpty()) {
             JSONArray ja = new JSONArray();
             ja.addAll(multicast);
-            message.put("notification_ids", ja);
+            message.put("registration_ids", ja);
         }
         return message.toString();
     }

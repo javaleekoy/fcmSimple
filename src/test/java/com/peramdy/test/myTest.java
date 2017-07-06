@@ -47,9 +47,7 @@ public class myTest {
         data.put("Marco", "Polo");
         data.put("Foo", "Bar");
         List<String> list = new ArrayList<String>();
-        list.add("1");
-        list.add("2");
-        list.add("3");
+        list.add("1:769094006249:android:368735ad817162da");
         Notification notification = new Notification();
         notification.registrationIds(list)
                 .collapse_key("a_collapse_key")
@@ -63,7 +61,7 @@ public class myTest {
                 .body("Hello World!")
                 .color("#ff0000");
 
-        FcmMessageService.setapiKey("AIzaSyCYmpB1vusSl1GaqxnLujMs3XUqfCCKhIA");
+        FcmMessageService.setapiKey("AAAAsxGTNek:APA91bElgIAzuEvnfFFPiDP88pBBc76Ninpp7xG65cR-c52ul9P8Z8bG4LBORAE2EplftMCLH8ljfEq0tbd5jCubBGbJVGNQAiFviA4qxWGre4K25xm6crB5XC0J27u4xr8qajHOncDr");
         FcmMessageService.pushMessage(notification);
 
     }
@@ -76,9 +74,7 @@ public class myTest {
         data.put("Marco", "Polo");
         data.put("Foo", "Bar");
         List<String> list = new ArrayList<String>();
-        list.add("1");
-        list.add("2");
-        list.add("3");
+        list.add("1:769094006249:android:368735ad817162da");
         Notification notification = new Notification();
         notification.registrationIds(list)
                 .collapse_key("a_collapse_key")
@@ -89,11 +85,11 @@ public class myTest {
                 .dry_run(true)
                 .data(data)
                 .title("Testing")
-                .body("Hello World!")
+                .body("Hello World2!")
                 .color("#ff0000");
 
         FcmMessageService.setNotification(notification);
-        FcmMessageService.setapiKey("AIzaSyCYmpB1vusSl1GaqxnLujMs3XUqfCCKhIA");
+        FcmMessageService.setapiKey("AAAAsxGTNek:APA91bElgIAzuEvnfFFPiDP88pBBc76Ninpp7xG65cR-c52ul9P8Z8bG4LBORAE2EplftMCLH8ljfEq0tbd5jCubBGbJVGNQAiFviA4qxWGre4K25xm6crB5XC0J27u4xr8qajHOncDr");
         FcmMessageService.pushMessage();
     }
 
